@@ -3,21 +3,23 @@ package pl.waw.sgh;
 public class Bowling {
 
     public static void main(String[] args) {
-        int n = 3400;
-        long before = System.currentTimeMillis();
-        System.out.println("Sum for n=" + n + ": " + sumBowlsSequence(n));
-        long after = System.currentTimeMillis();
-        System.out.println("Took: " + (after-before) + "ms");
+        int n = 16135;
 
-        before = System.currentTimeMillis();
+        long before = System.currentTimeMillis();
         System.out.println("Sum for n=" + n + ": " + sumBowlsLoop(n));
-        after = System.currentTimeMillis();
+        long after = System.currentTimeMillis();
         System.out.println("Took: " + (after-before) + "ms");
 
         before = System.currentTimeMillis();
         System.out.println("Sum for n=" + n + ": " + sumBowlsRecursion(n));
         after = System.currentTimeMillis();
         System.out.println("Took: " + (after-before) + "ms");
+
+        before = System.currentTimeMillis();
+        System.out.println("Sum for n=" + n + ": " + sumBowlsSequence(n));
+        after = System.currentTimeMillis();
+        System.out.println("Took: " + (after-before) + "ms");
+
     }
 
     public static int sumBowlsSequence(int n) {
