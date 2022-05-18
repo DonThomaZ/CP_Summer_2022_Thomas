@@ -15,7 +15,7 @@ public class FileReading {
         //String fileToRead = "src/file.txt";
         //String fileToRead = "h:\\tmp\\file.txt";
         //String fileToRead = "h:\\tmp\\file.txt";
-        String fileToRead = "..\\tmp\\file.txt";
+        String fileToRead = "out.txt";
         File file = new File(fileToRead);
         Scanner scanner = new Scanner(file);
         int i=0;

@@ -14,6 +14,10 @@ public class Shape {
         setParams(parA, parB);
     }
 
+//    public Shape(Double parA) {
+//        setParams(parA, 0.0);
+//    }
+
     public void setParams(Double a, Double b) {
         this.parA = a;
         this.parB = b;
