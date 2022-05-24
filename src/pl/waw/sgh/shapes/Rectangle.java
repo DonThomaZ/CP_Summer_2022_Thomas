@@ -3,7 +3,7 @@ package pl.waw.sgh.shapes;
 public class Rectangle extends Shape {
 
     public Rectangle(Double parA, Double parB) {
-        super(parA, parB);
+        super(parA, parB, null);
     }
 
     public Double calcSurface() {

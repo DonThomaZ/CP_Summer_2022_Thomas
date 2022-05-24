@@ -2,7 +2,7 @@ package pl.waw.sgh.shapes;
 
 public class Circle extends Shape {
     public Circle(Double parA) {
-        super(parA, null);
+        super(parA, null, null);
     }
 
     public Double calcSurface() {

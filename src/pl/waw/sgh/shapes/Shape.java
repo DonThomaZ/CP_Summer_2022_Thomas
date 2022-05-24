@@ -5,23 +5,27 @@ import java.util.Objects;
 public abstract class Shape implements PerimeterCalculation {
     protected Double parA = 0.0;
     protected Double parB = 0.0;
+    protected Double parC = 0.0;
 
     public Shape() {
-        this(40.0, 20.0);
+        this(40.0, 20.0, 20.0);
     }
 
-    public Shape(Double parA, Double parB) {
-        setParams(parA, parB);
+
+    public Shape(Double parA, Double parB, Double parC) {
+        setParams(parA, parB, parC);
     }
 
 //    public Shape(Double parA) {
 //        setParams(parA, 0.0);
 //    }
 
-    public void setParams(Double a, Double b) {
+    public void setParams(Double a, Double b, Double c) {
         this.parA = a;
         this.parB = b;
+        this.parC = c;
     }
+
 
     public abstract Double calcSurface();
 
@@ -30,7 +34,7 @@ public abstract class Shape implements PerimeterCalculation {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Shape shape = (Shape) o;
-        return Objects.equals(parA, shape.parA) && Objects.equals(parB, shape.parB);
+        return Objects.equals(parA, shape.parA) && Objects.equals(parB, shape.parB) && Objects.equals(parC, shape.parC);
     }
 
     @Override
