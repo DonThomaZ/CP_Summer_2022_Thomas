@@ -9,4 +9,9 @@ public class Rectangle extends Shape {
     public Double calcSurface() {
         return parA*parB;
     }
+
+    @Override
+    public Double calcPerimeter() {
+        return 2*parA+2*parB;
+    }
 }
