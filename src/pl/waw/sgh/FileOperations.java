@@ -16,6 +16,7 @@ public class FileOperations {
 
         String dirName = "h:\\";
         File myDir = new File(dirName);
+        //myDir = new File();
         File[] files = myDir.listFiles();
         for (File f : files) {
             System.out.println(f + " " + f.length());

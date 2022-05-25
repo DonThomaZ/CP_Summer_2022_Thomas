@@ -1,8 +1,9 @@
 package pl.waw.sgh.shapes;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public abstract class Shape implements PerimeterCalculation {
+public abstract class Shape implements PerimeterCalculation, Comparable<Shape> {
     protected Double parA = 0.0;
     protected Double parB = 0.0;
     protected Double parC = 0.0;
@@ -43,11 +44,16 @@ public abstract class Shape implements PerimeterCalculation {
     }
 
     @Override
+    public int compareTo(Shape sh) {
+        return calcSurface().compareTo(sh.calcSurface());
+    }
+
+    @Override
     public String toString() {
         return this.getClass().getSimpleName() + "{" +
                 "parA=" + parA +
                 ", parB=" + parB +
-                //", surface=" + calcSurface() +
+                ", surface=" + calcSurface() +
                 '}';
     }
 }
