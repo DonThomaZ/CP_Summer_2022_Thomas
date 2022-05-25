@@ -35,6 +35,17 @@ public class Bank {
         return newAccount(customer, "EUR");
     }
 
+    //TODO - to implement
+    public void transfer(Account fromAccount, Account toAccount, Double amount) {
+
+    }
+
+    //TODO - to implement
+    public void transfer(Integer fromAccountID, Integer toAccountID, Double amount) {
+
+    }
+
+
     @Override
     public String toString() {
         return "Bank{" +
