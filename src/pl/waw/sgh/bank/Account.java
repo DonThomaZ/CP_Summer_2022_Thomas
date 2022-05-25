@@ -31,6 +31,18 @@ public class Account {
         this.balance = balance;
     }
 
+    //TODO implement - check conditions - negative amount
+    public void deposit(Double toDeposit) {
+        //BigDecimal.valueOf(toDeposit)
+        //balance.add
+    }
+
+    //TODO implement - check conditions - negative amount, not enough money to charge
+    public void charge(Double toCharge) {
+
+
+    }
+
     public String getCurrency() {
         return currency;
     }
